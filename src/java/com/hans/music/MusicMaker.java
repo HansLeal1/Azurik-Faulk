@@ -11,7 +11,7 @@ public class MusicMaker {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         String[] notes = new String[5];
         notes[0] = "G";
@@ -50,7 +50,8 @@ public class MusicMaker {
             }
 
             row.printRow();
+
+            Thread.sleep(1000);
         }
     }
-
 }
